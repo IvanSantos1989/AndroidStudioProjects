@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conversor de Moedas"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+
+    <EditText
+        android:id="@+id/editEuros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor em euros"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+    <Button
+        android:id="@+id/button_real"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Real"
+        />
+
+    <Button
+        android:id="@+id/button_dolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dólar"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:id="@+id/button_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Valor convertido"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/textDesenvolvedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Desenvolvido por Ivanildo Silva"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+</LinearLayout>

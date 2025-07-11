@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AppGorjetas</string>
+    <string name="fant_stico_20">Fantástico (20%)</string>
+    <string name="razo_vel_15">Razoável (15%)</string>
+    <string name="bom_18">Bom (18%)</string>
+    <string name="arredondar_gorjeta">Arredondar gorjeta?</string>
+    <string name="calcular">Calcular</string>
+    <string name="custo_do_servi_o">Custo do serviço</string>
+    <string name="como_foi_o_servi_o">Como foi o serviço?</string>
+    <string name="texto_gorjeta">Valor da gorjeta: %s</string>
+    <string name="valor_da_gorjeta">valor da gorjeta</string>
+</resources>

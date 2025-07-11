@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Primeira Aplicação</string>
+    <string name="btn_intento">Iniciar</string>
+    <string name="btn_contador">Contador</string>
+    <string name="txt_display">0</string>
+    <string name="atividade_1">Atividade principal</string>
+    <string name="atividade_2">Segunda atividade</string>
+</resources>
