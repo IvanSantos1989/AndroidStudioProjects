@@ -1,5 +1,6 @@
 package com.example.welcomelogin
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
 
             if (username == "user" && password == "pass") {
                 Toast.makeText(applicationContext, "login válido!", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, MainActivityHome::class.java)
+                startActivity(intent)
             } else if (username.isNullOrEmpty() || password.isNullOrEmpty()) {
                 Toast.makeText(applicationContext, "Por favor, preencha todos os campos.", Toast.LENGTH_SHORT).show()
             } else {
