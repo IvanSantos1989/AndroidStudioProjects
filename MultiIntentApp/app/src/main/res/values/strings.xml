@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MultiIntentApp</string>
+
+    <string-array name="generos">
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Outro</item>
+    </string-array>
+</resources>
