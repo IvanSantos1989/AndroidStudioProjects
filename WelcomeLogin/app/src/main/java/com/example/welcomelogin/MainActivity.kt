@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity() {
             } else if (username.isNullOrEmpty() || password.isNullOrEmpty()) {
                 Toast.makeText(applicationContext, "Por favor, preencha todos os campos.", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(applicationContext, "login inválido!", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, LoginWrongActivity::class.java)
+                startActivity(intent)
             }
             // Limpa os campos de entrada após o login
             binding.editUsername.text?.clear()

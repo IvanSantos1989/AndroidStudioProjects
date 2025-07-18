@@ -12,10 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WelcomeLogin">
         <activity
+            android:name=".WeeksNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InputNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginWrongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BotaoDoisActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_botao_dois"
+            android:theme="@style/Theme.WelcomeLogin.Fullscreen" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivityHome"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
