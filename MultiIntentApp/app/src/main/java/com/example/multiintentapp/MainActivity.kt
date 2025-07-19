@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnEx1 = findViewById<Button>(R.id.btnEx1)
         val btnEx2 = findViewById<Button>(R.id.btnEx2)
+        val btnEx3 = findViewById<Button>(R.id.btnEx3)
 
         btnEx1.setOnClickListener {
             startActivity(Intent(this, Ex1Activity::class.java))
@@ -20,5 +21,9 @@ class MainActivity : AppCompatActivity() {
         btnEx2.setOnClickListener {
             startActivity(Intent(this, Ex2Activity::class.java))
         }
+        btnEx3.setOnClickListener {
+            startActivity(Intent(this, SplashActivity::class.java))
+        }
+
     }
 }

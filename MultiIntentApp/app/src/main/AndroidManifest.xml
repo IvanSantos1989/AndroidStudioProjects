@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MultiIntentApp">
         <activity
+            android:name=".SobreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ex3MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
             android:name=".Ex2_ResultActivity"
             android:exported="false" />
         <activity
