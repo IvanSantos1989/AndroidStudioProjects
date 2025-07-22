@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:text="Selecione seus produtos:"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Café -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imgCafe"
+                android:src="@drawable/cafe"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <CheckBox
+                android:id="@+id/checkCafe"
+                android:text="Café"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvPrecoCafe"
+                android:text="1€"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"/>
+
+            <EditText
+                android:id="@+id/qtyCafe"
+                android:hint="Qtd"
+                android:inputType="number"
+                android:text="1"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Sumo -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imgSumo"
+                android:src="@drawable/sumo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <CheckBox
+                android:id="@+id/checkSumo"
+                android:text="Sumo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvPrecoSumo"
+                android:text="2€"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"/>
+
+            <EditText
+                android:id="@+id/qtySumo"
+                android:hint="Qtd"
+                android:inputType="number"
+                android:text="1"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Sandes -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imgSandes"
+                android:src="@drawable/sandes"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <CheckBox
+                android:id="@+id/checkSandes"
+                android:text="Sandes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvPrecoSandes"
+                android:text="4€"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"/>
+
+            <EditText
+                android:id="@+id/qtySandes"
+                android:hint="Qtd"
+                android:inputType="number"
+                android:text="1"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Gelado -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgGelado"
+                android:src="@drawable/gelado"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <CheckBox
+                android:id="@+id/checkGelado"
+                android:text="Gelado"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvPrecoGelado"
+                android:text="3€"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"/>
+
+            <EditText
+                android:id="@+id/qtyGelado"
+                android:hint="Qtd"
+                android:inputType="number"
+                android:text="1"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEfetuarPedido"
+            android:text="Efetuar pedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

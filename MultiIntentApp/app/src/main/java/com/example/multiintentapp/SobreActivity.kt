@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.multiintentapp.databinding.ActivitySobreBinding
 
 class SobreActivity : AppCompatActivity() {
-    private lateinit var binding: ActivitySobreBinding
+
+    private val binding by lazy {
+        ActivitySobreBinding.inflate(layoutInflater)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySobreBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        // Pode customizar o texto aqui se quiser
+        // Pode customizar o texto aqui se precisar
     }
 }

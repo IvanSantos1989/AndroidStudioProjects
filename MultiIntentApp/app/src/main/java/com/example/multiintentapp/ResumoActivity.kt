@@ -1,14 +1,18 @@
 package com.example.multiintentapp
 
 import android.os.Bundle
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.multiintentapp.databinding.ActivityResumoBinding
 
 class ResumoActivity : AppCompatActivity() {
 
+    private val binding by lazy {
+        ActivityResumoBinding.inflate(layoutInflater)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_resumo)
+        setContentView(binding.root)
 
         val nome = intent.getStringExtra("nome")
         val morada = intent.getStringExtra("morada")
@@ -18,6 +22,6 @@ class ResumoActivity : AppCompatActivity() {
 
         val texto = "O $nome mora na $morada, tem o telefone $telefone, o email $email e género $genero."
 
-        findViewById<TextView>(R.id.tvResumo).text = texto
+        binding.tvResumo.text = texto
     }
 }

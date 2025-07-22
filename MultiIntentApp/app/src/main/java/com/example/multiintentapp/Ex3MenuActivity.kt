@@ -6,11 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.multiintentapp.databinding.ActivityEx3MenuBinding
 
 class Ex3MenuActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityEx3MenuBinding
+
+    private val binding by lazy {
+        ActivityEx3MenuBinding.inflate(layoutInflater)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityEx3MenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btnRegisto.setOnClickListener {

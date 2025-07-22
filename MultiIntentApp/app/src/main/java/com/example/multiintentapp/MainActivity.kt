@@ -2,27 +2,31 @@ package com.example.multiintentapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.multiintentapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private val binding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
 
-        val btnEx1 = findViewById<Button>(R.id.btnEx1)
-        val btnEx2 = findViewById<Button>(R.id.btnEx2)
-        val btnEx3 = findViewById<Button>(R.id.btnEx3)
-
-        btnEx1.setOnClickListener {
+        binding.btnEx1.setOnClickListener {
             startActivity(Intent(this, Ex1Activity::class.java))
         }
-        btnEx2.setOnClickListener {
+        binding.btnEx2.setOnClickListener {
             startActivity(Intent(this, Ex2Activity::class.java))
         }
-        btnEx3.setOnClickListener {
+        binding.btnEx3.setOnClickListener {
             startActivity(Intent(this, SplashActivity::class.java))
+        }
+
+        binding.btnEx4.setOnClickListener {
+            startActivity(Intent(this, Ex4Activity::class.java))
         }
 
     }

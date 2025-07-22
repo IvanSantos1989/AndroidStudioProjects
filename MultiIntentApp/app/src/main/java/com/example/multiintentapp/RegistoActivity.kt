@@ -7,11 +7,13 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.multiintentapp.databinding.ActivityRegistoBinding
 
 class RegistoActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityRegistoBinding
+
+    private val binding by lazy {
+        ActivityRegistoBinding.inflate(layoutInflater)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityRegistoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btnSalvar.setOnClickListener {
@@ -20,7 +22,9 @@ class RegistoActivity : AppCompatActivity() {
 
             if (username.isNotEmpty() && password.isNotEmpty()) {
                 val prefs = getSharedPreferences("login", Context.MODE_PRIVATE)
-                prefs.edit().putString("username", username).putString("password", password).apply()
+                prefs.edit().putString("username", username)
+                    .putString("password", password)
+                    .apply()
                 Toast.makeText(this, "Usuário salvo!", Toast.LENGTH_SHORT).show()
                 finish()
             } else {
